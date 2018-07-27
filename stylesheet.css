@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0;
 }
 
@@ -11,7 +11,6 @@ body {
 	font-weight: lighter;
 	font-size: .875rem;
 	color: #4A4A4A;
-
 }
 
 /*TEXT STYLES*/
@@ -34,8 +33,8 @@ h1 {
 	padding: 35px;
 	white-space: nowrap;
 }
-.h1-v2 {
 
+.h1-v2 {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -47,16 +46,11 @@ h1 {
 	font-size: 1.6rem;
 	font-weight: bold;
 	color: #fff;
-
 }
 
-h2 {
+h2 {}
 
-}
-
-h3 {
-
-}
+h3 {}
 
 h4 {
 	color: #4A4A4A;
@@ -67,12 +61,10 @@ a {
 	color: #085EB9;
 }
 
-p {
-
-}
-
+p {}
 
 /*p as subhead for body content*/
+
 .p-sub {
 	text-align: center;
 	font-weight: bold;
@@ -80,22 +72,22 @@ p {
 }
 
 /*Body text used in PLAYSTATION Content Block*/
+
 .p-v2 {
 	font-weight: lighter;
 	color: #fff;
 	font-size: 1rem;
 	text-align: left;
-
 }
 
 /*FLEX GRID STYLES*/
 
 .flex-grid {
 	display: flex;
-  	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	height: 20rem;
 	margin: auto;
 }
@@ -108,28 +100,27 @@ p {
 	color: #fff;
 	flex: 1;
 	background-color: #003b63;
-	height: 430px;
-	width: 100vw;
 	padding-bottom: 8px;
 	border-bottom: solid 7px #91d5e8;
 }
 
+.hero-content {
+	display: flex;
+}
+
 .flex-grid-halves {
 	display: flex;
-  	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
 	padding: 5px;
-	height: auto;
-	width: 960px; 
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
-
 .flex-grid-halves .col {
 	flex: 1;
+}
 
+.col-image {
+	width: 100%;
 }
 
 .flex-grid-thirds {
@@ -137,7 +128,7 @@ p {
 	justify-content: space-between;
 	padding: 5px;
 	height: 100%;
-	width: 960px; 
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -145,20 +136,39 @@ p {
 	border: solid 0px gray;
 	margin: 5px;
 	align-items: center;
-
 }
 
 /*HERO STYLES*/
-.blue-bar{
+
+.blue-bar {
 	position: absolute;
 	display: block;
 	background-color: #91d5e8;
 	height: 7px;
 	width: 100vw;
 	margin-top: 40px;
-
 }
 
+.hero-lockup {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.lockup-image-container {
+	padding-top: 20%;
+}
+
+.hero-lockup-text-block {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-lockup-text-block .--main-heading {
+	flex-grow: 1;
+}
 
 #hero-lockup {
 	display: block;
@@ -168,16 +178,12 @@ p {
 	padding-top: 12rem;
 	padding-bottom: 50px;
 	transform: scale(1.15);
-
 }
 
 #hero-p {
 	letter-spacing: .025rem;
 	text-align: center;
-	margin-left: 30rem;
-	margin-right: 30rem;
 	white-space: nowrap;
-
 }
 
 #hero-small {
@@ -185,34 +191,36 @@ p {
 	font-size: .75rem;
 	text-align: center;
 	padding-top: 50px;
-	margin-left: 30rem;
-	margin-right: 30rem;
 	white-space: nowrap;
 }
 
-#left-thumb {
-	position: absolute;
-	display: inline-block;
-	float: left;
-	margin-top: 10.5rem;
-	z-index: 1;
-
+.left-thumb {
+	max-width: 35rem;
 }
 
-#right-thumb {
-	display: inline-block;
-	float: right;
-	margin-top: 2.5rem;
+.left-thumb img {
+	top: 6rem;
 }
 
+.right-thumb img {
+	top: -4rem;
+}
 
+.left-thumb img, .right-thumb img {
+	width: 100%;
+	position: relative;
+}
+
+.right-thumb {
+	overflow: hidden;
+	max-width: 35rem;
+}
 
 /*NAVIGATION & FOOTER STYLES*/
 
 .logo {
-	float: left;
 	display: inline-block;
-	padding-bottom: 10px;
+	flex-grow:1;
 }
 
 #E3 {
@@ -225,132 +233,106 @@ p {
 }
 
 /*003b63*/
-.main-nav{
-	position: absolute;
+
+.main-nav {
 	background-color: #003b63;
-	width: 100%;
-	height: auto;
-	float: right;
-	display: block;
-	text-align: right;
-	float: right;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
+	padding: 1.5rem 1rem;
 	border-bottom: solid 7px #91d5e8;
 }
 
 .main-nav-bar {
-	margin-left: 16.25rem;
-	margin-right: 16.25rem;
+	display: flex;
+	max-width: 60rem;
+	margin: 0 auto;
 	color: #fff;
 }
 
-.content-box{
+.content-box {
 	background-color: #fff;
 	width: 200px;
 	height: 167px;
 	padding-top: 20px;
 	text-align: center;
-
 }
 
-
-
 .footer {
-    background-color: #003b63;
-    width: 100%;
-    height: 300px;
-    margin-top: 38px;
-    padding-top: 50px;
+	background-color: #003b63;
+	width: 100%;
+	height: 300px;
+	margin-top: 38px;
+	padding-top: 50px;
 }
 
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-    align-items: center;
-    justify-content: center;
-
+	align-items: center;
+	justify-content: center;
 }
 
 /*PRE-ORDER TITLES BY CONSOLE*/
+.box {
+	height: 100px;
+	padding: 1rem;
+	text-align: center;
+}
+
+.box-logo {
+	margin-top: 1rem;
+	height: 3rem;
+}
 
 #ps-box {
 	background-color: #11519B;
-	width: 310px;
-	height: 110px;
 	margin: 0 auto;
-	padding-top: 40px;
 }
 
 #xbox-box {
 	background-color: #62BB46;
-	width: 310px;
-	height: 110px;
-	padding-top: 40px;
-
 }
 
 #nintendo-box {
 	background-color: #E52634;
-	width: 310px;
-	height: 110px;
-	padding-top: 40px;
-
 }
 
 #ps-logo {
-	padding-top: 0;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	padding-left: 40%;
-
 }
 
 #xbox-logo {
-	padding-left: 40%;
 }
 
 #nintendo-logo {
-	padding-left: 22%;
 }
 
 /*PRE-ORDER LATEST GAMES*/
 
 .preorder-latest {
 	padding-bottom: 2rem;
-
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
-    width: 305px;
-    background-color: #F5F5F5;
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	background-color: #F5F5F5;
 }
 
-
 /* Add some padding inside the card container */
-.container {
-    padding: 10px 16px;
 
+.container {
+	padding: 10px 16px;
 }
 
 /*PLAYSTATION CONTENT*/
 
 .playstation-content {
-	background: linear-gradient(
-      rgba(98, 187, 0, 0.8), 
-      rgba(98, 187, 0, 0.8)), url(Assets/Desktop/PSblock/Image.jpg);
+	background: linear-gradient( rgba(98, 187, 0, 0.8), rgba(98, 187, 0, 0.8)), url(Assets/Desktop/PSblock/Image.jpg);
 	background-size: cover;
 	background-blend-mode: multiply;
-	height: 30rem;
 	padding-top: 4rem;
 	padding-left: 10px;
 	padding-right: 10px;
 	word-break: break-word;
-
 }
 
 #play {
@@ -359,21 +341,17 @@ p {
 	margin: 0 auto;
 }
 
-.content-box{
+.content-box {
 	background-color: #fff;
-	width: 310px;
+	width: 100%;
 	height: 167px;
 	padding-top: 20px;
 	text-align: center;
-
 }
 
-
-
-#ps-product{
+#ps-product {
 	margin: 0 auto;
 	padding-bottom: 10px;
-
 }
 
 /*FAQ*/
@@ -409,116 +387,86 @@ hr {
 	margin: auto;
 }
 
-#placeholder-p{
+#placeholder-p {
 	padding-top: 10%;
-
 }
 
 /*mobile phones*/
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
-
-@media only screen and (min-device-width: 375px) and (max-width: 768px){
-
-	html{
-		width: 100%;
+@media only screen and (min-device-width: 375px) and (max-width: 768px) {
+	#hero-lockup {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding-left: 10px;
+		padding-bottom: 0;
+		transform: scale(1);
 	}
-
-	#hero-lockup{
-	display: block;
-	position: relative;
-	float: left;
-	margin: auto;
-	padding-left: 10px;
-	padding-top: 100px;
-	padding-bottom: 0;
-	transform: scale(1);
-	}
-
 	#hero-p {
 		letter-spacing: .025rem;
 		text-align: center;
-		margin-left: 30rem;
-		margin-right: 30rem;
 		white-space: nowrap;
-
 	}
-
 	#hero-small {
 		letter-spacing: .025rem;
 		font-size: .75rem;
 		text-align: center;
-		padding-top: 50px;
-		margin-left: 30rem;
-		margin-right: 30rem;
 		white-space: nowrap;
 	}
-
-	.logo{
-	float: left;
-	padding-bottom: 0;	
-}
-
-	.main-nav-bar{
+	.logo {
+	}
+	.main-nav-bar {
+		width: 100%;
 		margin: auto;
 		border: none;
-		float: left;
 	}
-
-	.main-nav{
+	.main-nav {
 		border: none;
-		float: left;
+		padding: 1rem;
 	}
-
-	#lang-fr{
+	.language {
 		padding: 0;
-		float: right;
 	}
-
-	#right-thumb{
+	.hero-content {
+		flex-direction: column-reverse;
+	}
+	.right-thumb {
 		display: none;
 	}
-
 	#left-thumb {
 		transform: scale(.6) rotate(-20deg);
 		z-index: 0;
 		left: -80px;
 		padding-top: 150px;
 	}
-
 	.hero {
-		border-bottom: solid 50px #91d5e8;
+		padding: 16px;
 	}
-
+	.hero-small {
+		display: none;
+	}
 	.flex-grid-halves {
 		display: block;
-		width: 100vh;
+		width: 100vw;
 	}
-
 	.flex-grid-thirds {
 		display: block;
-		width: 100vh;
+		width: 100vw;
 	}
-
-	.wrapper{
-		height: auto;
-		width: 100vh;
-		margin: 0 auto;
+	.wrapper {
+		/*  */
 	}
-
-	.footer{
+	.footer {
 		height: 500px;
 	}
-
-/*	.flex-grid, .hero, #hero-p, .flex-grid-halves, .flex-grid-thirds, .main-nav,  .hero, #hero-lockup, .playstation-content{
+	/*	.flex-grid, .hero, #hero-p, .flex-grid-halves, .flex-grid-thirds, .main-nav,  .hero, #hero-lockup, .playstation-content{
 		display: block;
 		margin: auto;
 		width: 375px; 
 
 	}*/
-
-
-
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -528,13 +476,8 @@ hr {
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
 
-}
-
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
 
 /*
 @media handheld, only screen and (max-width: 767px) {
