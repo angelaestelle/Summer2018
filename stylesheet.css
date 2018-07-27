@@ -80,6 +80,10 @@ p {}
 	text-align: left;
 }
 
+.page-section {
+	max-width: 60rem;
+}
+
 /*FLEX GRID STYLES*/
 
 .flex-grid {
@@ -111,7 +115,6 @@ p {}
 .flex-grid-halves {
 	display: flex;
 	padding: 5px;
-	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -128,7 +131,6 @@ p {}
 	justify-content: space-between;
 	padding: 5px;
 	height: 100%;
-	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -145,7 +147,6 @@ p {}
 	display: block;
 	background-color: #91d5e8;
 	height: 7px;
-	width: 100vw;
 	margin-top: 40px;
 }
 
@@ -449,11 +450,9 @@ hr {
 	}
 	.flex-grid-halves {
 		display: block;
-		width: 100vw;
 	}
 	.flex-grid-thirds {
 		display: block;
-		width: 100vw;
 	}
 	.wrapper {
 		/*  */
