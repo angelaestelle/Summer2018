@@ -1,0 +1,556 @@
+*{
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: open sans, arial, serif;
+	font-weight: lighter;
+	font-size: .875rem;
+	color: #4A4A4A;
+
+}
+
+/*TEXT STYLES*/
+
+h1 {
+	text-align: center;
+	font-family: open sans, arial, serif;
+	font-weight: lighter;
+	color: #4A4A4A;
+	font-size: 1.75rem;
+	white-space: nowrap;
+}
+
+.h1-main {
+	text-align: center;
+	font-family: open sans, arial, serif;
+	font-weight: lighter;
+	color: #4A4A4A;
+	font-size: 1.75rem;
+	padding: 35px;
+	white-space: nowrap;
+}
+.h1-v2 {
+
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.h1-v3 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+	color: #4A4A4A;
+}
+
+a {
+	text-decoration: none;
+	color: #085EB9;
+}
+
+p {
+
+}
+
+
+/*p as subhead for body content*/
+.p-sub {
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*Body text used in PLAYSTATION Content Block*/
+.p-v2 {
+	font-weight: lighter;
+	color: #fff;
+	font-size: 1rem;
+	text-align: left;
+
+}
+
+/*FLEX GRID STYLES*/
+
+.flex-grid {
+	display: flex;
+  	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	height: 20rem;
+	margin: auto;
+}
+
+.col {
+	flex: 1;
+}
+
+.hero {
+	color: #fff;
+	flex: 1;
+	background-color: #003b63;
+	height: 430px;
+	width: 100vw;
+	padding-bottom: 8px;
+	border-bottom: solid 7px #91d5e8;
+}
+
+.flex-grid-halves {
+	display: flex;
+  	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	padding: 5px;
+	height: auto;
+	width: 960px; 
+	margin: 0 auto;
+}
+
+
+.flex-grid-halves .col {
+	flex: 1;
+
+}
+
+.flex-grid-thirds {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	height: 100%;
+	width: 960px; 
+	margin: 0 auto;
+}
+
+.flex-grid-thirds .col {
+	border: solid 0px gray;
+	margin: 5px;
+	align-items: center;
+
+}
+
+/*HERO STYLES*/
+.blue-bar{
+	position: absolute;
+	display: block;
+	background-color: #91d5e8;
+	height: 7px;
+	width: 100vw;
+	margin-top: 40px;
+
+}
+
+
+#hero-lockup {
+	display: block;
+	position: relative;
+	margin: auto;
+	padding-left: 405px;
+	padding-top: 12rem;
+	padding-bottom: 50px;
+	transform: scale(1.15);
+
+}
+
+#hero-p {
+	letter-spacing: .025rem;
+	text-align: center;
+	margin-left: 30rem;
+	margin-right: 30rem;
+	white-space: nowrap;
+
+}
+
+#hero-small {
+	letter-spacing: .025rem;
+	font-size: .75rem;
+	text-align: center;
+	padding-top: 50px;
+	margin-left: 30rem;
+	margin-right: 30rem;
+	white-space: nowrap;
+}
+
+#left-thumb {
+	position: absolute;
+	display: inline-block;
+	float: left;
+	margin-top: 10.5rem;
+	z-index: 1;
+
+}
+
+#right-thumb {
+	display: inline-block;
+	float: right;
+	margin-top: 2.5rem;
+}
+
+
+
+/*NAVIGATION & FOOTER STYLES*/
+
+.logo {
+	float: left;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+#E3 {
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#lang-fr {
+	padding-top: 18px;
+}
+
+/*003b63*/
+.main-nav{
+	position: absolute;
+	background-color: #003b63;
+	width: 100%;
+	height: auto;
+	float: right;
+	display: block;
+	text-align: right;
+	float: right;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: solid 7px #91d5e8;
+}
+
+.main-nav-bar {
+	margin-left: 16.25rem;
+	margin-right: 16.25rem;
+	color: #fff;
+}
+
+.content-box{
+	background-color: #fff;
+	width: 200px;
+	height: 167px;
+	padding-top: 20px;
+	text-align: center;
+
+}
+
+
+
+.footer {
+    background-color: #003b63;
+    width: 100%;
+    height: 300px;
+    margin-top: 38px;
+    padding-top: 50px;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*PRE-ORDER TITLES BY CONSOLE*/
+
+#ps-box {
+	background-color: #11519B;
+	width: 310px;
+	height: 110px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+#xbox-box {
+	background-color: #62BB46;
+	width: 310px;
+	height: 110px;
+	padding-top: 40px;
+
+}
+
+#nintendo-box {
+	background-color: #E52634;
+	width: 310px;
+	height: 110px;
+	padding-top: 40px;
+
+}
+
+#ps-logo {
+	padding-top: 0;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding-left: 40%;
+
+}
+
+#xbox-logo {
+	padding-left: 40%;
+}
+
+#nintendo-logo {
+	padding-left: 22%;
+}
+
+/*PRE-ORDER LATEST GAMES*/
+
+.preorder-latest {
+	padding-bottom: 2rem;
+
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    width: 305px;
+    background-color: #F5F5F5;
+}
+
+
+/* Add some padding inside the card container */
+.container {
+    padding: 10px 16px;
+
+}
+
+/*PLAYSTATION CONTENT*/
+
+.playstation-content {
+	background: linear-gradient(
+      rgba(98, 187, 0, 0.8), 
+      rgba(98, 187, 0, 0.8)), url(Assets/Desktop/PSblock/Image.jpg);
+	background-size: cover;
+	background-blend-mode: multiply;
+	height: 30rem;
+	padding-top: 4rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	word-break: break-word;
+
+}
+
+#play {
+	padding-left: 30%;
+	padding-bottom: 10%;
+	margin: 0 auto;
+}
+
+.content-box{
+	background-color: #fff;
+	width: 310px;
+	height: 167px;
+	padding-top: 20px;
+	text-align: center;
+
+}
+
+
+
+#ps-product{
+	margin: 0 auto;
+	padding-bottom: 10px;
+
+}
+
+/*FAQ*/
+
+ul {
+	width: 100%;
+	margin-left: 14.25rem;
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+hr {
+	margin-top: .5rem;
+	margin-bottom: .7rem;
+	opacity: .25;
+}
+
+#chevron {
+	float: right;
+	padding-right: 1.5rem;
+	padding-top: .5rem;
+}
+
+/*PLACEHOLDER STYLES*/
+
+.placeholder-box {
+	width: 305px;
+	height: 150px;
+	text-align: center;
+	margin: auto;
+}
+
+#placeholder-p{
+	padding-top: 10%;
+
+}
+
+/*mobile phones*/
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+@media only screen and (min-device-width: 375px) and (max-width: 768px){
+
+	html{
+		width: 100%;
+	}
+
+	#hero-lockup{
+	display: block;
+	position: relative;
+	float: left;
+	margin: auto;
+	padding-left: 10px;
+	padding-top: 100px;
+	padding-bottom: 0;
+	transform: scale(1);
+	}
+
+	#hero-p {
+		letter-spacing: .025rem;
+		text-align: center;
+		margin-left: 30rem;
+		margin-right: 30rem;
+		white-space: nowrap;
+
+	}
+
+	#hero-small {
+		letter-spacing: .025rem;
+		font-size: .75rem;
+		text-align: center;
+		padding-top: 50px;
+		margin-left: 30rem;
+		margin-right: 30rem;
+		white-space: nowrap;
+	}
+
+	.logo{
+	float: left;
+	padding-bottom: 0;	
+}
+
+	.main-nav-bar{
+		margin: auto;
+		border: none;
+		float: left;
+	}
+
+	.main-nav{
+		border: none;
+		float: left;
+	}
+
+	#lang-fr{
+		padding: 0;
+		float: right;
+	}
+
+	#right-thumb{
+		display: none;
+	}
+
+	#left-thumb {
+		transform: scale(.6) rotate(-20deg);
+		z-index: 0;
+		left: -80px;
+		padding-top: 150px;
+	}
+
+	.hero {
+		border-bottom: solid 50px #91d5e8;
+	}
+
+	.flex-grid-halves {
+		display: block;
+		width: 100vh;
+	}
+
+	.flex-grid-thirds {
+		display: block;
+		width: 100vh;
+	}
+
+	.wrapper{
+		height: auto;
+		width: 100vh;
+		margin: 0 auto;
+	}
+
+	.footer{
+		height: 500px;
+	}
+
+/*	.flex-grid, .hero, #hero-p, .flex-grid-halves, .flex-grid-thirds, .main-nav,  .hero, #hero-lockup, .playstation-content{
+		display: block;
+		margin: auto;
+		width: 375px; 
+
+	}*/
+
+
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+
+/*
+@media handheld, only screen and (max-width: 767px) {
+    #homemain {
+    line-height: 15px;
+    background-color: transparent;
+    height: 500px;
+    width:600px;
+    max-width: 320px; /* or whatever size you want 
+    float: left;
+    padding: 10px;
+    font-size: 100%;
+    margin: 10px;
+    word-wrap: break-word;
+    }
+}
+*/
+
+}
