@@ -1,9 +1,6 @@
+/* Global Styles */
 * {
 	margin: 0;
-}
-
-html, body {
-	height: 100%;
 }
 
 body {
@@ -15,32 +12,6 @@ body {
 
 /*TEXT STYLES*/
 
-h1 {
-	text-align: center;
-	font-family: "open sans", arial, serif;
-	font-weight: lighter;
-	color: #4A4A4A;
-	font-size: 1.75rem;
-}
-
-.h1-v2 {
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: lighter;
-	font-size: 2rem;
-	text-align: left;
-}
-
-.h1-v3 {
-	font-size: 1.6rem;
-	font-weight: bold;
-	color: #fff;
-}
-
-h2 {}
-
-h3 {}
-
 h4 {
 	color: #4A4A4A;
 }
@@ -50,26 +21,17 @@ a {
 	color: #085EB9;
 }
 
-/*p as subhead for body content*/
-
-.p-sub {
-	text-align: center;
-	font-weight: bold;
-	color: #fff;
-}
-
-/*Body text used in PLAYSTATION Content Block*/
-
-.p-v2 {
-	font-weight: lighter;
-	color: #fff;
-	font-size: 1rem;
-	text-align: left;
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Components */
 
-/* HEADER COMPONENT */
+/* Header Component */
 
 .header-navigation {
 	background-color: #003b63;
@@ -98,7 +60,7 @@ a {
 	padding-top: 18px;
 }
 
-/* Hero */
+/* Hero Component */
 
 .hero {
 	color: #fff;
@@ -160,7 +122,7 @@ a {
 	max-width: 35rem;
 }
 
-/* Grid Content */
+/* Grid Component */
 
 .grid-container {
 	display: flex;
@@ -181,7 +143,7 @@ a {
 	margin: 0 auto;
 	max-width: 60rem;
 	padding-top: 2.5rem;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
 }
 
 .page-section--heading .--heading-text {
@@ -193,9 +155,8 @@ a {
 	padding-bottom: 2rem;
 }
 
-.page-section .page-section--content {}
+/* Card Component */
 
-/* Card Component */ 
 .card {
 	/* Add shadows to create the "card" effect */
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -208,67 +169,24 @@ a {
 
 /* Card Overlay Text Component */
 
-.card-with-text {
+.card-text-overlay {
 	position: relative;
 	color: #fff;
 	margin: .25rem;
 }
 
-.image-container {
+.card-text-overlay .--image-container {
 	width: 100%;
 }
 
-.card-text {
+.card-text-overlay .--text-container {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
 }
 
-.card-text h1 {
-	text-align: left;
-	color: #fff;
-}
-
-
-.flex-grid-thirds {
-	display: flex;
-	justify-content: space-between;
-	padding: 5px;
-	height: 100%;
-	margin: 0 auto;
-}
-
-.flex-grid-thirds .col {
-	border: solid 0px gray;
-	margin: 5px;
-	align-items: center;
-}
-
-/*HERO STYLES*/
-
-/*NAVIGATION & FOOTER STYLES*/
-
-.content-box {
-	background-color: #fff;
-	padding-top: 20px;
-	text-align: center;
-}
-
-.footer {
-	background-color: #003b63;
-	width: 100%;
-	margin-top: 38px;
-	padding-top: 50px;
-}
-
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-}
+/* Section Specific Styles */
 
 /*PRE-ORDER TITLES BY CONSOLE*/
 
@@ -283,6 +201,12 @@ a {
 	height: 3rem;
 }
 
+.box-subtitle {
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
 #ps-box {
 	background-color: #11519B;
 }
@@ -295,16 +219,6 @@ a {
 	background-color: #E52634;
 }
 
-/*PRE-ORDER LATEST GAMES*/
-
-.preorder-latest {
-	padding-bottom: 2rem;
-}
-
-/* Add some padding inside the card container */
-
-
-
 /*PLAYSTATION CONTENT*/
 
 .playstation-content {
@@ -313,6 +227,21 @@ a {
 	background-blend-mode: multiply;
 	padding: 4rem .5rem;
 	word-break: break-word;
+}
+
+.playstation-heading {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.playstation-subtitle {
+	font-weight: lighter;
+	color: #fff;
+	font-size: 1rem;
+	text-align: left;
 }
 
 #play {
@@ -329,7 +258,7 @@ a {
 	text-align: center;
 }
 
-.ps-product {
+.content-box --image {
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
@@ -358,17 +287,10 @@ hr {
 	padding-top: .5rem;
 }
 
-/*PLACEHOLDER STYLES*/
+/* Footer */
 
-.placeholder-box {
-	width: 305px;
-	height: 150px;
-	text-align: center;
-	margin: auto;
-}
-
-#placeholder-p {
-	padding-top: 10%;
+.footer {
+	background-color: #003b63;
 }
 
 /*mobile phones*/
@@ -376,14 +298,7 @@ hr {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 @media only screen and (max-width: 768px) {
-	.page-section {
-		max-width: 40rem;
-		padding: 0 2rem;
-	}
-	/* Grid Content */
-	.grid-container {
-		flex-direction: column;
-	}
+	/* Header Component */
 	.header-navigation--container {
 		width: 100%;
 		margin: auto;
@@ -395,6 +310,11 @@ hr {
 	}
 	.language {
 		padding: 0;
+	}
+
+	/* Hero Component */
+	.hero {
+		padding: 1rem 1rem 0 0;
 	}
 	.hero--container {
 		flex-direction: column-reverse;
@@ -420,18 +340,16 @@ hr {
 		left: -5rem;
 		transform: scale(.7) rotate(-20deg);
 	}
-	.hero {
-		padding: 1rem 1rem 0 0;
+	/* Page Section Component */
+	.page-section {
+		max-width: 40rem;
+		padding: 0 2rem;
 	}
-	.hero-small {
-		display: none;
-	}
-	.flex-grid-halves {
+	/* Grid Component */
+	.grid-container {
 		flex-direction: column;
 	}
-	.flex-grid-thirds {
-		display: block;
-	}
+
 	.box {
 		height: 50px;
 		padding: 1rem;
@@ -441,40 +359,4 @@ hr {
 		margin-top: 0;
 		height: 2rem;
 	}
-	.footer {}
-	/*	.flex-grid, .hero, #hero-p, .flex-grid-halves, .flex-grid-thirds, .main-nav,  .hero, #hero--lockup, .playstation-content{
-		display: block;
-		margin: auto;
-		width: 375px; 
-
-	}*/
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
-
-/*
-@media handheld, only screen and (max-width: 767px) {
-    #homemain {
-    line-height: 15px;
-    background-color: transparent;
-    height: 500px;
-    width:600px;
-    max-width: 320px; /* or whatever size you want 
-    float: left;
-    padding: 10px;
-    font-size: 100%;
-    margin: 10px;
-    word-wrap: break-word;
-    }
-}
-*/
-
 }
