@@ -21,7 +21,6 @@ h1 {
 	font-weight: lighter;
 	color: #4A4A4A;
 	font-size: 1.75rem;
-	white-space: nowrap;
 }
 
 .h1-main {
@@ -31,7 +30,6 @@ h1 {
 	color: #4A4A4A;
 	font-size: 1.75rem;
 	padding: 35px;
-	white-space: nowrap;
 }
 
 .h1-v2 {
@@ -159,6 +157,7 @@ p {}
 
 .lockup-image-container {
 	padding-top: 20%;
+	padding-bottom: 2rem;
 }
 
 .hero-lockup-text-block {
@@ -169,6 +168,10 @@ p {}
 
 .hero-lockup-text-block .--main-heading {
 	flex-grow: 1;
+}
+
+.hero-lockup-text-block .--sub-heading {
+	padding-top: 5rem;
 }
 
 #hero-lockup {
@@ -259,7 +262,6 @@ p {}
 .footer {
 	background-color: #003b63;
 	width: 100%;
-	height: 300px;
 	margin-top: 38px;
 	padding-top: 50px;
 }
@@ -392,11 +394,35 @@ hr {
 	padding-top: 10%;
 }
 
+.card-with-text {
+	position: relative;
+	color: #fff;
+	margin: .25rem;
+}
+
+.image-container {
+	width: 100%;
+}
+
+.card-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.card-text h1 {
+	text-align: left;
+	color: #fff;
+}
+
+
+
 /*mobile phones*/
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
-@media only screen and (min-device-width: 375px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.page-section {
 		max-width: 40rem;
 		padding: 0 2rem;
@@ -442,6 +468,11 @@ hr {
 		text-align: left;
 		padding-left: 1rem;
 	}
+
+	.hero-lockup-text-block .--sub-heading {
+		display: none;
+	}
+
 	.lockup-image-container {
 		padding-top: 0;
 	}
@@ -463,7 +494,7 @@ hr {
 		display: none;
 	}
 	.flex-grid-halves {
-		display: block;
+		flex-direction: column;
 	}
 	.flex-grid-thirds {
 		display: block;
@@ -479,7 +510,6 @@ hr {
 		height: 2rem;
 	}
 	.footer {
-		height: 500px;
 	}
 	/*	.flex-grid, .hero, #hero-p, .flex-grid-halves, .flex-grid-thirds, .main-nav,  .hero, #hero-lockup, .playstation-content{
 		display: block;
