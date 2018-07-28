@@ -1,4 +1,5 @@
 /* Global Styles */
+
 * {
 	margin: 0;
 }
@@ -79,22 +80,15 @@ a {
 	flex-direction: column;
 	flex-grow: 1;
 	text-align: center;
+	min-width: 20rem;
 }
 
 .lockup-image-container {
-	padding-top: 20%;
+	padding-top: 30%;
 	padding-bottom: 2rem;
 }
 
-.hero--lockup-content {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-}
-
-.hero--lockup-content .--main-heading {
-	flex-grow: 1;
-}
+.hero--lockup-content {}
 
 .hero--lockup-content .--sub-heading {
 	padding-top: 5rem;
@@ -120,6 +114,14 @@ a {
 .hero--right-thumb {
 	overflow: hidden;
 	max-width: 35rem;
+}
+
+/* Notification Bar Component */
+
+.notification-bar {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
 }
 
 /* Grid Component */
@@ -311,20 +313,18 @@ hr {
 	.language {
 		padding: 0;
 	}
-
 	/* Hero Component */
 	.hero {
-		padding: 1rem 1rem 0 0;
+		padding: 1rem 0 0 0;
+		border: none;
 	}
 	.hero--container {
 		flex-direction: column-reverse;
 	}
 	.hero--lockup {
+		min-width: 0;
 		text-align: left;
 		padding-left: 1rem;
-	}
-	.hero--lockup-content .--sub-heading {
-		display: none;
 	}
 	.lockup-image-container {
 		padding-top: 0;
@@ -340,6 +340,12 @@ hr {
 		left: -5rem;
 		transform: scale(.7) rotate(-20deg);
 	}
+	/* Notification Bar Component */
+	.notification-bar {
+		background: #91d5e8;
+		padding: 1rem;
+		text-align: left;
+	}
 	/* Page Section Component */
 	.page-section {
 		max-width: 40rem;
@@ -349,7 +355,6 @@ hr {
 	.grid-container {
 		flex-direction: column;
 	}
-
 	.box {
 		height: 50px;
 		padding: 1rem;
