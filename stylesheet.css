@@ -397,6 +397,11 @@ hr {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 @media only screen and (min-device-width: 375px) and (max-width: 768px) {
+	.page-section {
+		max-width: 40rem;
+		padding: 0 2rem;
+	}
+
 	#hero-lockup {
 		display: block;
 		position: relative;
@@ -433,17 +438,26 @@ hr {
 	.hero-content {
 		flex-direction: column-reverse;
 	}
+	.hero-lockup {
+		text-align: left;
+		padding-left: 1rem;
+	}
+	.lockup-image-container {
+		padding-top: 0;
+	}
 	.right-thumb {
 		display: none;
 	}
-	#left-thumb {
-		transform: scale(.6) rotate(-20deg);
-		z-index: 0;
-		left: -80px;
-		padding-top: 150px;
+	.left-thumb {
+		overflow: hidden;
+	}
+	.left-thumb img {
+		top: 5rem;
+    left: -5rem;
+		transform: scale(.7) rotate(-20deg);
 	}
 	.hero {
-		padding: 16px;
+		padding: 1rem 1rem 0 0;
 	}
 	.hero-small {
 		display: none;
@@ -454,8 +468,15 @@ hr {
 	.flex-grid-thirds {
 		display: block;
 	}
-	.wrapper {
-		/*  */
+	.box {
+		height: 50px;
+		padding: 1rem;
+		text-align: center;
+	}
+	
+	.box-logo {
+		margin-top: 0;
+		height: 2rem;
 	}
 	.footer {
 		height: 500px;
