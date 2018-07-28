@@ -99,7 +99,7 @@ a {
 }
 
 .hero--left-thumb img {
-	top: 6rem;
+	top: 10rem;
 }
 
 .hero--right-thumb img {
@@ -342,6 +342,8 @@ hr {
 	}
 	/* Notification Bar Component */
 	.notification-bar {
+		min-width: 40rem;
+		margin: 0 auto;
 		background: #91d5e8;
 		padding: 1rem;
 		text-align: left;
