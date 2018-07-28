@@ -171,6 +171,10 @@ a {
 	margin: .25rem;
 }
 
+.grid-image {
+	width: 100%;
+}
+
 /* Page Section */
 
 .page-section {
@@ -202,35 +206,30 @@ a {
 	background-color: #F5F5F5;
 }
 
-/*FLEX GRID STYLES*/
+/* Card Overlay Text Component */
 
-.flex-grid {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	height: 20rem;
-	margin: auto;
+.card-with-text {
+	position: relative;
+	color: #fff;
+	margin: .25rem;
 }
 
-.col {
-	flex: 1;
-}
-
-.flex-grid-halves {
-	display: flex;
-	padding: 5px;
-	margin: 0 auto;
-}
-
-.flex-grid-halves .col {
-	flex: 1;
-}
-
-.col-image {
+.image-container {
 	width: 100%;
 }
+
+.card-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.card-text h1 {
+	text-align: left;
+	color: #fff;
+}
+
 
 .flex-grid-thirds {
 	display: flex;
@@ -340,6 +339,7 @@ a {
 .faq-list {
 	width: 100%;
 	list-style: none;
+	padding: 0;
 }
 
 .faq-list li {
@@ -369,28 +369,6 @@ hr {
 
 #placeholder-p {
 	padding-top: 10%;
-}
-
-.card-with-text {
-	position: relative;
-	color: #fff;
-	margin: .25rem;
-}
-
-.image-container {
-	width: 100%;
-}
-
-.card-text {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 1rem;
-}
-
-.card-text h1 {
-	text-align: left;
-	color: #fff;
 }
 
 /*mobile phones*/
